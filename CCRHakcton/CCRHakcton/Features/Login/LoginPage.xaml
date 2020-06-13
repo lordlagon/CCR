@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Core.LoginPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:local="clr-namespace:Core"
+             NavigationPage.BackButtonTitle=""
+             NavigationPage.HasBackButton="False"
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ObjectIsNotNullConverter x:Key="isNotNull" />
+            <Style TargetType="Entry" x:Key="entLogin">
+                <Setter Property="FontSize" Value="{StaticResource textDefaultSize}"/>
+                <Setter Property="TextColor" Value="{StaticResource colorWarmGrey}"/>
+                <Setter Property="PlaceholderColor" Value="{StaticResource colorWarmGrey}"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="HeightRequest" Value="55"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+
+            </Style>
+            <Style TargetType="local:SvgImage" x:Key="svgLogin">
+                <Setter Property="HeightRequest" Value="24"/>
+                <Setter Property="WidthRequest" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="StartAndExpand"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="20" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" HorizontalOptions="Center" VerticalOptions="End" Source="ic_logo" >
+                 
+                </Image>
+                <local:CustomEntry Padding="54, 16, 16, 16" Grid.Row="1" Margin="0, 58, 0, 10" Keyboard="Email" Text="{Binding Email}"  HasError="{Binding Error, Converter={StaticResource isNotNull}}" Placeholder="Email" Style="{StaticResource entLogin}"/>
+                <local:SvgImage Grid.Row="1" Margin="15, 58, 0, 10" ResourceId="ic_login_user" Style="{StaticResource svgLogin}"/>
+                <local:CustomEntry Padding="54, 16, 16, 16"  Grid.Row="2" Text="Senha" HasError="{Binding Error, Converter={StaticResource isNotNull}}" IsPassword="True" Placeholder="{x:Static local:Resource.Password}" Style="{StaticResource entLogin}"/>
+                <local:SvgImage Grid.Row="2" Margin="15, 0, 0, 0"  ResourceId="ic_login_password" Style="{StaticResource svgLogin}"/>
+
+                <Label Grid.Row="3" Margin="0, 15, 0, 26" Text="{Binding Error}" Style="{StaticResource lblError}"/>
+
+                <Button Grid.Row="4" Command="{Binding LoginCommand}" Text="Entrar" BackgroundColor="Red" TextColor="White" CornerRadius="25"  HeightRequest="55"/>
+                <Label Grid.Row="5" Text="Precisa de Ajuda?" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" Style="{StaticResource lblHyperlink}">
+                    <!--<Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NeedHelpCommand}"/>
+                    </Label.GestureRecognizers>-->
+                </Label>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

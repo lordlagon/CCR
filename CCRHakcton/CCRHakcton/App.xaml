@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Core.App">
+    <Application.Resources>
+        <OnPlatform x:Key="font_extrabold" x:TypeArguments="x:String">
+            <On Platform="Android" Value="Montserrat-ExtraBold.ttf#Montserrat-ExtraBold" />
+            <On Platform="iOS" Value="Montserrat-ExtraBold" />
+        </OnPlatform>
+        <OnPlatform x:Key="font_bold" x:TypeArguments="x:String">
+            <On Platform="Android" Value="Montserrat-Bold.ttf#Montserrat-Bold" />
+            <On Platform="iOS" Value="Montserrat-Bold" />
+        </OnPlatform>
+        <OnPlatform x:Key="font_regular" x:TypeArguments="x:String">
+            <On Platform="Android" Value="Montserrat-Regular.ttf#Montserrat-Regular" />
+            <On Platform="iOS" Value="Montserrat-Regular" />
+        </OnPlatform>
+
+        <!--#region Colors-->
+        <Color x:Key="colorPrimary">#757575</Color>
+        <Color x:Key="colorPrimaryDark">#1B1D26</Color>
+        <Color x:Key="colorAccent">#0A8944</Color>
+        <Color x:Key="colorSeparator">#D8D8D8</Color>
+        <Color x:Key="colorTextDefault">#313131</Color>
+        <Color x:Key="colorLightBlue">#007aff</Color>
+        <Color x:Key="colorBrigthBlue">#007aff</Color>
+        <Color x:Key="colorRed">#bb060c</Color>
+        <Color x:Key="colorWhite">#ffffff</Color>
+        <Color x:Key="colorGreen">#00b22e</Color>
+        <Color x:Key="colorGreenLight">#00b22e</Color>
+        <Color x:Key="colorBackgroundPage">#fafafa</Color>
+        <Color x:Key="colorWarmGrey">#858585</Color>
+        <Color x:Key="colorBackgroundModal">#80959595</Color>
+        <Color x:Key="lightGrayColor">#959595</Color>
+        <Color x:Key="colorGray">#C7C7C7</Color>
+        <Color x:Key="colorTitleGreen">#2e9448</Color>
+        <Color x:Key="colorJungleGreen">#098943</Color>
+        <Color x:Key="colorFrameSelected">#007aff</Color>
+
+        <Color x:Key="colorCallArea">#00c232</Color>
+        <Color x:Key="colorMessageArea">#007aff</Color>
+        <Color x:Key="colorChatArea">#00bdbb</Color>
+        <Color x:Key="colorFileArea">#dea900</Color>
+
+
+        <x:Double x:Key="textMicroSize">10</x:Double>
+        <x:Double x:Key="textSmallSize">14</x:Double>
+        <x:Double x:Key="textDefaultSize">16</x:Double>
+        <x:Double x:Key="textMediumSize">18</x:Double>
+        <x:Double x:Key="textTitleSize">30</x:Double>
+
+
+        <!--#endregion-->
+
+        <Style TargetType="Label" x:Key="lblTitleBase">
+            <Setter Property="FontSize" Value="{StaticResource textTitleSize}"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblTitle" BasedOn="{StaticResource lblTitleBase}">
+            <Setter Property="TextColor" Value="{StaticResource colorTextDefault}"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblTitleWhite" BasedOn="{StaticResource lblTitle}">
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblTitleGreen" BasedOn="{StaticResource lblTitleBase}">
+            <Setter Property="TextColor" Value="{StaticResource colorTitleGreen}"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblDefaultBase">
+            <Setter Property="FontSize" Value="{StaticResource textDefaultSize}"/>
+            <Setter Property="TextColor" Value="{StaticResource colorTextDefault}"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblMicroBase">
+            <Setter Property="FontSize" Value="{StaticResource textMicroSize}"/>
+            <Setter Property="TextColor" Value="{StaticResource colorTextDefault}"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblSmallBase">
+            <Setter Property="FontSize" Value="{StaticResource textSmallSize}"/>
+            <Setter Property="TextColor" Value="{StaticResource colorTextDefault}"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblMediumBase">
+            <Setter Property="FontSize" Value="{StaticResource textMediumSize}"/>
+            <Setter Property="TextColor" Value="{StaticResource colorTextDefault}"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblDefault" BasedOn="{StaticResource lblDefaultBase}">
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblDefaultGreen" BasedOn="{StaticResource lblDefault}">
+            <Setter Property="TextColor" Value="{StaticResource colorTitleGreen}"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblSmallWarmGrey" BasedOn="{StaticResource lblSmallBase}">
+            <Setter Property="TextColor" Value="{StaticResource colorWarmGrey}"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblMedium" BasedOn="{StaticResource lblMediumBase}">
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblMicroWarmGrey" BasedOn="{StaticResource lblMicroBase}">
+            <Setter Property="TextColor" Value="{StaticResource colorWarmGrey}"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblMicroWhite" BasedOn="{StaticResource lblMicroBase}">
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblSmallGreen" BasedOn="{StaticResource lblSmallBase}">
+            <Setter Property="TextColor" Value="{StaticResource colorGreen}" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblHyperlink">
+            <Setter Property="TextColor" Value="{StaticResource colorLightBlue}"/>
+            <Setter Property="FontSize" Value="{StaticResource textSmallSize}"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="btnHyperlink">
+            <Setter Property="TextColor" Value="{StaticResource colorLightBlue}"/>
+            <Setter Property="FontSize" Value="{StaticResource textSmallSize}"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="lblError">
+            <Setter Property="TextColor" Value="{StaticResource colorRed}"/>
+            <Setter Property="FontSize" Value="{StaticResource textSmallSize}"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="local:SvgImage" x:Key="svgSmall">
+            <Setter Property="HeightRequest" Value="24" />
+            <Setter Property="WidthRequest" Value="24" />
+        </Style>
+
+        <Style TargetType="ListView">
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+        </Style>
+    </Application.Resources>
+</Application>
