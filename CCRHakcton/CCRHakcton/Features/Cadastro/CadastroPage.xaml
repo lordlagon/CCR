@@ -1,12 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Core.CadastroPage">
+             xmlns:local="clr-namespace:Core"
+             x:Class="Core.CadastroPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+             
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Grid.ColumnSpan="2" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="End" Source="ic_logo" />
+            <Label Grid.Row="1" Grid.ColumnSpan="2" Text="Crie sua Conta CCR Card" HorizontalOptions="Center" FontSize="Large"/>
+            <local:CustomEntry Grid.Row="2" Grid.ColumnSpan="2" Padding="40, 16, 16, 16"  Keyboard="Email" Text="{Binding User}"  Placeholder="Nome" Style="{StaticResource entLogin}"/>
+            <local:CustomEntry Grid.Row="3" Grid.ColumnSpan="2" Padding="40, 16, 16, 16"  Keyboard="Numeric" Text="{Binding User}"  Placeholder="Telefone" Style="{StaticResource entLogin}"/>
+            <local:CustomEntry Grid.Row="4" Grid.ColumnSpan="2" Padding="40, 16, 16, 16"  Keyboard="Numeric" Text="{Binding User}"  Placeholder="CNH" Style="{StaticResource entLogin}"/>
+            <local:CustomEntry Grid.Row="5" Grid.ColumnSpan="2" Padding="40, 16, 16, 16"  Keyboard="Numeric" Text="{Binding User}"  Placeholder="CPF" Style="{StaticResource entLogin}"/>
+            <local:CustomEntry Grid.Row="6" Grid.ColumnSpan="2" Padding="40, 16, 16, 16"  Keyboard="Email" Text="{Binding User}"  Placeholder="Email" Style="{StaticResource entLogin}"/>
+            <RadioButton Grid.Row="7" Grid.Column="0" Text="Feminino" HorizontalOptions="CenterAndExpand"/>
+            <RadioButton Grid.Row="7" Grid.Column="1" Text="Masculino" HorizontalOptions="CenterAndExpand"/>
+            <Label Grid.Row="8" Grid.ColumnSpan="2" Text="Foto da CHN em mãos ao lado do Rosto" HorizontalOptions="Center"/>
+            <Frame Grid.Row="9" Grid.ColumnSpan="2" Padding="0" HasShadow="False" CornerRadius="30" BackgroundColor="{StaticResource colorWarmGrey}" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Start" >
+                <local:SvgImage Margin="0" ResourceId="ic_camera_account" BackgroundColor="{StaticResource colorWarmGrey}" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource svgSmall}"/>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding AvatarOptionSelectedCommand}"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Label Grid.Row="10" Grid.ColumnSpan="2" Text="Já tem um CCR Card? Entre na Plataforma" Style="{StaticResource lblHyperlink}" HorizontalOptions="Center" VerticalOptions="EndAndExpand"/>
+
+
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

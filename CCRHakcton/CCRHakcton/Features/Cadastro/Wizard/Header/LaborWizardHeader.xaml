@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Core"
+             x:Class="Core.LaborWizardHeader"
+             Orientation="Horizontal"
+             Spacing="10" 
+             HorizontalOptions="FillAndExpand" 
+             VerticalOptions="Start">    
+    <local:WizardHeaderItem ShowLine="True" Text="1"/>
+    <local:WizardHeaderItem ShowLine="True" Text="2"/>
+    <local:WizardHeaderItem ShowLine="True" Text="3"/>
+    <local:WizardHeaderItem ShowLine="False" Text="4"/>
+</StackLayout>
