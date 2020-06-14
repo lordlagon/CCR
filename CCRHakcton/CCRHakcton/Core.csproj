@@ -183,4 +183,10 @@
       <DependentUpon>ServicosPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\Cadastro\Wizard\" />
+    <Folder Include="Features\Cadastro\Wizard\Header\" />
+    <Folder Include="Features\Cadastro\Wizard\Step1\" />
+    <Folder Include="Features\Cadastro\Wizard\Step2\" />
+  </ItemGroup>
 </Project>

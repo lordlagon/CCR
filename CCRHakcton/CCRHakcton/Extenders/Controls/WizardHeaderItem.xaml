@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Core"
+             x:Class="Core.WizardHeaderItem"
+             Spacing="10" 
+             Orientation="Horizontal" 
+             HorizontalOptions="FillAndExpand">
+    <local:SvgImage HorizontalOptions="Start" ResourceId="ic_circle_gray" WidthRequest="10" HeightRequest="10" VerticalOptions="Center">
+        <local:SvgImage.Triggers>
+            <DataTrigger TargetType="local:SvgImage"
+                         Binding="{Binding Active}"
+                         Value="True">
+                <Setter Property="ResourceId" Value="ic_circle_green"/>
+            </DataTrigger>
+        </local:SvgImage.Triggers>
+    </local:SvgImage>
+    <Label Text="{Binding Text}" Style="{StaticResource lbl12LightGray}" HorizontalOptions="Start" VerticalOptions="Center" VerticalTextAlignment="Center">
+        <Label.Triggers>
+            <DataTrigger TargetType="Label"
+                         Binding="{Binding Active}"
+                         Value="True">
+                <Setter Property="TextColor" Value="{StaticResource primaryColor}"/>
+            </DataTrigger>
+        </Label.Triggers>
+    </Label>
+    <BoxView HeightRequest="2" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource lightGrayColor}" IsVisible="{Binding ShowLine}">
+        <BoxView.Triggers>
+            <DataTrigger TargetType="BoxView"
+                         Binding="{Binding Active}"
+                         Value="True">
+                <Setter Property="BackgroundColor" Value="{StaticResource greenColor}"/>
+            </DataTrigger>
+        </BoxView.Triggers>
+    </BoxView>
+</StackLayout>
