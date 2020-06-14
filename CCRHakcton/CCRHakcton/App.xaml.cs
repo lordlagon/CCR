@@ -21,6 +21,7 @@ namespace Core
             ConfigureMap();
             Container.Build();
             RegisterAppCenter();
+            Xamarin.Forms.Device.SetFlags(new string[] { "RadioButton_Experimental" });
         }
 
         protected override async void OnStart()

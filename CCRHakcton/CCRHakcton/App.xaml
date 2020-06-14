@@ -52,7 +52,15 @@
 
 
         <!--#endregion-->
+        <Style TargetType="Entry" x:Key="entLogin">
+            <Setter Property="FontSize" Value="{StaticResource textDefaultSize}"/>
+            <Setter Property="TextColor" Value="{StaticResource colorWarmGrey}"/>
+            <Setter Property="PlaceholderColor" Value="{StaticResource colorWarmGrey}"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="HeightRequest" Value="55"/>
+            <Setter Property="HorizontalOptions" Value="Fill"/>
 
+        </Style>
         <Style TargetType="Label" x:Key="lblTitleBase">
             <Setter Property="FontSize" Value="{StaticResource textTitleSize}"/>
             <Setter Property="HorizontalOptions" Value="FillAndExpand"/>

@@ -37,7 +37,7 @@ namespace Core
 
         #region Commands
         public ICommand LoginCommand { get; }
-        public ICommand NeedHelpCommand { get; }
+        public ICommand CadastroCommand { get; }
         public ICommand ChangeUserCommand { get; set; }
         #endregion
 
@@ -48,7 +48,7 @@ namespace Core
             _dialogService = dialogService;
 
             LoginCommand = new Command(async () => await ExecuteLoginCommandAsync());
-            NeedHelpCommand = new Command(async () => await ExecuteNeedHelpCommandAsync());
+            CadastroCommand = new Command(async () => await ExecuteCadastroCommandAsync());
             ChangeUserCommand = new Command((user) => ExecuteChangeUserCommand(user));
         }
 
@@ -58,7 +58,7 @@ namespace Core
 
         void ExecuteChangeUserCommand(object user)
         {
-            if(user is string usr)
+            if (user is string usr)
             {
                 switch (usr)
                 {
@@ -84,7 +84,7 @@ namespace Core
         {
             Error = string.Empty;
 
-           // var loginResult = await _loginService.LoginAsync(User, Password).Handle(this);
+            // var loginResult = await _loginService.LoginAsync(User, Password).Handle(this);
 
             Password = string.Empty;
 
@@ -116,12 +116,13 @@ namespace Core
 
             //    return;
             //}
-           // Preferences.Set(Constants.FirstLauch, true);
-            await _navigationService.NavigateAndClearBackStackAsync<ServicosViewModel>();
+            // Preferences.Set(Constants.FirstLauch, true);
+            await _navigationService.NavigateAndClearBackStackAsync<CadastroViewModel>();
         }
-        
-        async Task ExecuteNeedHelpCommandAsync() { }
-            //=> await _navigationService.NavigateToAsync<NeedHelpViewModel>();
+
+        async Task ExecuteCadastroCommandAsync()
+            => await _navigationService.NavigateAndClearBackStackAsync<CadastroViewModel>();
+
         #endregion
     }
 }
