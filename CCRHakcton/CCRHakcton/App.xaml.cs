@@ -50,8 +50,8 @@ namespace Core
         }
         void ConfigureMap()
         {
-            //NavigationService.ConfigureMap<MainViewModel, MainPage>();
-            //NavigationService.ConfigureMap<HomeViewModel, HomePage>();
+            NavigationService.ConfigureMap<MainViewModel, MainPage>();
+            NavigationService.ConfigureMap<HomeViewModel, HomePage>();
             NavigationService.ConfigureMap<LoginViewModel, LoginPage>();
             NavigationService.ConfigureMap<CadastroViewModel, CadastroPage>();
             //NavigationService.ConfigureMap<MenuViewModel, MenuPage>();

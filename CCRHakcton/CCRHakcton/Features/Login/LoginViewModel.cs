@@ -117,11 +117,11 @@ namespace Core
             //    return;
             //}
             // Preferences.Set(Constants.FirstLauch, true);
-            await _navigationService.NavigateAndClearBackStackAsync<CadastroViewModel>();
+            await _navigationService.NavigateAndClearBackStackAsync<HomeViewModel>();
         }
 
         async Task ExecuteCadastroCommandAsync()
-            => await _navigationService.NavigateAndClearBackStackAsync<CadastroViewModel>();
+            => await _navigationService.NavigateToAsync<CadastroViewModel>();
 
         #endregion
     }

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Core.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="End" Source="ic_logo" />
+            <Label Text="Crie sua Conta CCR Card" HorizontalOptions="Center" FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
