@@ -1,4 +1,6 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace Core
@@ -7,19 +9,34 @@ namespace Core
     {
 
         #region Commands
-        public ICommand LoginCommand { get; }
-        public ICommand CadastroCommand { get; }
-        public ICommand ChangeUserCommand { get; set; }
+      
+        public ICommand MyAccountCommand { get; }
+        public ICommand ParadasCommand { get; }
+        public ICommand CuponsCommand { get; set; }
         #endregion
 
         #region Init
         public HomeViewModel(INavigationService navigationService) : base(navigationService)
         {
 
-            //LoginCommand = new Command(async () => await ExecuteLoginCommandAsync());
-            //CadastroCommand = new Command(async () => await ExecuteCadastroCommandAsync());
-            //ChangeUserCommand = new Command((user) => ExecuteChangeUserCommand(user));
+            MyAccountCommand = new Command(async () => await ExecuteMyAccountCommandAsync());
+            ParadasCommand = new Command(async () => await ExecuteParadasCommandAsync());
+            CuponsCommand = new Command(() => ExecuteCuponsCommand());
         }
+
+        private void ExecuteCuponsCommand()
+        {
+            throw new NotImplementedException();
+        }
+
+        private Task ExecuteParadasCommandAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        async Task ExecuteMyAccountCommandAsync()
+            => await _navigationService.NavigateToAsync<MyAccountViewModel>();
+
 
         #endregion
 

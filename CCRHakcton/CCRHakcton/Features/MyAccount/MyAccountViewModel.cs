@@ -9,7 +9,6 @@ namespace Core
     public class MyAccountViewModel : BaseItemViewModel<MyAccountWrapper>
     {
         #region Services
-       // readonly IMyAccountService _myAccountService;
         readonly IDialogService _dialogService;
         readonly IValidationService _validationService;
         #endregion
@@ -27,11 +26,9 @@ namespace Core
 
         #region Init
         public MyAccountViewModel(INavigationService navigationService,
-                                 // IMyAccountService myAccountService,
                                   IDialogService dialogService,
                                   IValidationService validationService) : base(navigationService)
         {
-           // _myAccountService = myAccountService;
             _dialogService = dialogService;
             _validationService = validationService;
 
@@ -146,14 +143,18 @@ namespace Core
         #region LoadData
         protected override Task<MyAccountWrapper> GetDataAsync()
         {
-            return null;   //=> _myAccountService.GetUserAsync(_forceSync);
+            var user = new MyAccountWrapper
+            {
+                //Name = "Fulano",
+                //Email = "Fulano@gmail.com", 
+                //CNH =   "012567-4",
+                //CPF = "000.000.000-00",
+                //Sexo = "M",
+                //Telefone = "(41) 3333-0000"
+            };
+            return Task.FromResult(user);  // => _myAccountService.GetUserAsync(_forceSync);
         }
-        protected async override Task OnDataLoadedAsync()
-        {
-            await base.OnDataLoadedAsync();
-            _name = Item.Name;
-            _email = Item.Email;
-        }
+        
         #endregion
 
         #region Aux

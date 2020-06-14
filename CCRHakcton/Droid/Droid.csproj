@@ -154,7 +154,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_logo.jpeg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\foto.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\CustomEntry.xml" />
   </ItemGroup>

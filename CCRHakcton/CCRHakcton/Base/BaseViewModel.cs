@@ -12,7 +12,7 @@ namespace Core
     public class BaseViewModel : BindingObject, IBaseViewModel
     {
         protected readonly INavigationService _navigationService;
-        protected ILoadingPageService _loadingPageService => App.Instance.Container.Resolve<ILoadingPageService>();
+       // protected ILoadingPageService _loadingPageService => App.Instance.Container.Resolve<ILoadingPageService>();
 
         private string _title;
         public string Title
@@ -30,11 +30,11 @@ namespace Core
                 if (value == _isBusy)
                     return;
 
-                if (value)
-                    _loadingPageService.ShowLoadingPage();
-                else
-                    _loadingPageService.HideLoadingPage();
-
+                //if (value)
+                //  _loadingPageService.ShowLoadingPage();
+                //else
+                //    _loadingPageService.HideLoadingPage();
+                
                 SetProperty(ref _isBusy, value);
             }
         }
