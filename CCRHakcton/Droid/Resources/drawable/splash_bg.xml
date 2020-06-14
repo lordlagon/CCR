@@ -3,5 +3,5 @@
   <item>
     <color android:color="@color/launcher_background"/>
   </item>
-  <item android:drawable="@drawable/ic_logo" android:gravity="center"/>
+  <item android:drawable="@drawable/ic_logo" android:gravity="center" android:height="400dp" android:width="500dp"/>
 </layer-list>

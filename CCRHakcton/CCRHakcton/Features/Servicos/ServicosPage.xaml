@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Core.ServicosPage"
+             BackgroundColor="White"
+             Title="Pacote de Serviços">
+    <ContentPage.Content>
+        <Grid Padding="20,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Row="0" Grid.ColumnSpan="2" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Source="ic_logo" />
+            <Label Grid.Row="1" Grid.ColumnSpan="2" Text="Pacote de serviços" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" FontSize="Medium"/>
+            <Label Grid.Row="2" Text="Serviço 1: R$ " HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+            <Label Grid.Row="3" Text="banho" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+            <Label Grid.Row="4" Text="refeição" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+            <Label Grid.Row="5" Text="Pernoite" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+            <Label Grid.Row="6" Text=" " HorizontalOptions="Center" VerticalOptions="StartAndExpand"/>
+
+            <Label Grid.Row="7" Text="Serviço 2: R$ " HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+            <Label Grid.Row="8" Text="banho" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+            <Label Grid.Row="9" Text="Pernoite" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+            <Label Grid.Row="11" Text=" " HorizontalOptions="Center" VerticalOptions="StartAndExpand"/>
+
+            <Label Grid.Row="12" Grid.ColumnSpan="2" Text="Serviços Customizados: R$" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+            <CheckBox Grid.Row="13" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+            <Label Grid.Row="13" Grid.Column="1" Text="banho" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+            <CheckBox Grid.Row="14" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+            <Label Grid.Row="14" Grid.Column="1" Text="refeição" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+            <CheckBox Grid.Row="15" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+            <Label Grid.Row="15" Grid.Column="1" Text="pernoite" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+            <Label Grid.Row="16" Text=" " HorizontalOptions="Center" VerticalOptions="StartAndExpand"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

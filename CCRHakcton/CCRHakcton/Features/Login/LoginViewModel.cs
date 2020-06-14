@@ -117,7 +117,7 @@ namespace Core
             //    return;
             //}
            // Preferences.Set(Constants.FirstLauch, true);
-           // await _navigationService.NavigateAndClearBackStackAsync<PinAccessViewModel>(PinAccessType.Create);
+            await _navigationService.NavigateAndClearBackStackAsync<ServicosViewModel>();
         }
         
         async Task ExecuteNeedHelpCommandAsync() { }
