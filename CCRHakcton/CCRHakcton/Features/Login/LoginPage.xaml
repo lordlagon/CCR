@@ -7,7 +7,8 @@
              xmlns:local="clr-namespace:Core"
              NavigationPage.BackButtonTitle=""
              NavigationPage.HasBackButton="False"
-             ios:Page.UseSafeArea="true">
+             ios:Page.UseSafeArea="true"
+             BackgroundColor="White">
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:ObjectIsNotNullConverter x:Key="isNotNull" />
@@ -36,25 +37,24 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <Image Grid.Row="0" HorizontalOptions="Center" VerticalOptions="End" Source="ic_logo" >
-                 
-                </Image>
-                <local:CustomEntry Padding="54, 16, 16, 16" Grid.Row="1" Margin="0, 58, 0, 10" Keyboard="Email" Text="{Binding User}"  HasError="{Binding Error, Converter={StaticResource isNotNull}}" Placeholder="Email" Style="{StaticResource entLogin}"/>
-                <local:SvgImage Grid.Row="1" Margin="15, 58, 0, 10" ResourceId="ic_login_user" Style="{StaticResource svgLogin}"/>
+                <Image Grid.Row="0" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="End" Source="ic_logo" />
+
+                <local:CustomEntry Padding="54, 16, 16, 16" Grid.Row="1" Margin="0, 30, 0, 10" Keyboard="Email" Text="{Binding User}"  HasError="{Binding Error, Converter={StaticResource isNotNull}}" Placeholder="Email ou Telefone" Style="{StaticResource entLogin}"/>
+                <local:SvgImage Grid.Row="1" Margin="15, 30, 0, 10" ResourceId="ic_login_user" Style="{StaticResource svgLogin}"/>
                 <local:CustomEntry Padding="54, 16, 16, 16"  Grid.Row="2" Text="Senha" HasError="{Binding Error, Converter={StaticResource isNotNull}}" IsPassword="True" Placeholder="Senha" Style="{StaticResource entLogin}"/>
                 <local:SvgImage Grid.Row="2" Margin="15, 0, 0, 0"  ResourceId="ic_login_password" Style="{StaticResource svgLogin}"/>
 
                 <Label Grid.Row="3" Margin="0, 15, 0, 26" Text="{Binding Error}" Style="{StaticResource lblError}"/>
+                <Button Grid.Row="4" Margin="0,0,0,20" Command="{Binding LoginCommand}" Text="Entrar" BackgroundColor="Red" TextColor="White" CornerRadius="25"  HeightRequest="55"/>
+                
+                <Label Grid.Row="5" Text="Se Inscreva Aqui" TextColor="Black" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" Style="{StaticResource lblHyperlink}"/>
+                <Button Grid.Row="6" Margin="0,0,0,20" Command="{Binding LoginCommand}" Text="Inscreva-se" BackgroundColor="Red" TextColor="White" CornerRadius="25"  HeightRequest="55"/>
 
-                <Button Grid.Row="4" Command="{Binding LoginCommand}" Text="Entrar" BackgroundColor="Red" TextColor="White" CornerRadius="25"  HeightRequest="55"/>
-                <Label Grid.Row="5" Text="Precisa de Ajuda?" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" Style="{StaticResource lblHyperlink}">
-                    <!--<Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding NeedHelpCommand}"/>
-                    </Label.GestureRecognizers>-->
-                </Label>
             </Grid>
         </ScrollView>
     </ContentPage.Content>
