@@ -85,6 +85,9 @@
     <PackageReference Include="SkiaSharp.Views.Forms">
       <Version>1.68.3</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>5.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.AppCompat">
       <Version>1.1.0.1</Version>
     </PackageReference>
@@ -151,7 +154,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_logo.jpeg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\foto.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\CustomEntry.xml" />
   </ItemGroup>
