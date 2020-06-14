@@ -62,7 +62,7 @@ namespace Core
         Task InitializeAsyc()
         {
             var navigationService = Container.Resolve<INavigationService>();
-            return navigationService.NavigateAndClearBackStackAsync<ServicosViewModel>();
+            return navigationService.NavigateAndClearBackStackAsync<LoginViewModel>();
         }
         void RegisterAppCenter()
         {
