@@ -52,15 +52,17 @@ namespace Core
             //NavigationService.ConfigureMap<MainViewModel, MainPage>();
             //NavigationService.ConfigureMap<HomeViewModel, HomePage>();
             NavigationService.ConfigureMap<LoginViewModel, LoginPage>();
+            NavigationService.ConfigureMap<CadastroViewModel, CadastroPage>();
             //NavigationService.ConfigureMap<MenuViewModel, MenuPage>();
             //NavigationService.ConfigureMap<MyAccountViewModel, MyAccountPage>();
 
+            NavigationService.ConfigureMap<ServicosViewModel, ServicosPage>();
         }
 
         Task InitializeAsyc()
         {
             var navigationService = Container.Resolve<INavigationService>();
-            return navigationService.NavigateAndClearBackStackAsync<LoginViewModel>();
+            return navigationService.NavigateAndClearBackStackAsync<ServicosViewModel>();
         }
         void RegisterAppCenter()
         {

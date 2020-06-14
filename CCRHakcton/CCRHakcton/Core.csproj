@@ -170,12 +170,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Features\Cadastro\CadastroPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Features\Login\LoginPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\NewFolder\" />
+    <Compile Update="Features\Servicos\ServicosPage.xaml.cs">
+      <DependentUpon>ServicosPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
