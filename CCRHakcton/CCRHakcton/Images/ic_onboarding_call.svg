@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="66px" viewBox="0 0 67 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Call Onboarding</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-29.1%" y="-21.1%" width="158.2%" height="158.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.543478261" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Interface" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Onboarding-" transform="translate(-21.000000, -268.000000)">
+            <g id="Call-Onboarding" transform="translate(30.000000, 272.000000)">
+                <g id="Group">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#00B22E" stroke-width="1.08695652" fill="#F6F9FD" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Icon/Call" transform="translate(13.000000, 13.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M14.9724582,22.1586314 L14.9841916,22.165475 C17.1235773,23.5273549 19.9219877,23.2203697 21.7152389,21.4273419 L22.4720417,20.6706334 C23.1760443,19.9657408 23.1760443,18.824812 22.4720417,18.1199194 L19.2834965,14.9337266 C18.5785161,14.2298116 17.4374452,14.2298116 16.7324648,14.9337266 L16.7324648,14.9337266 C16.0294399,15.6376415 14.888369,15.6386192 14.1843664,14.9356819 C14.1833886,14.9347042 14.1833886,14.9347042 14.1824109,14.9337266 L9.08034745,9.83132091 C8.37634483,9.1264283 8.37634483,7.9854995 9.08034745,7.2806069 L9.08034745,7.2806069 C9.78435007,6.57766961 9.78532785,5.43674081 9.08230301,4.73282586 C9.08132523,4.7318482 9.08132523,4.7318482 9.08034745,4.73087055 L5.89278005,1.53978947 C5.18779965,0.835874524 4.04672874,0.835874524 3.34174834,1.53978947 L2.58494553,2.29649803 C0.791694419,4.08952582 0.484671056,6.88758772 1.84574278,9.02670702 L1.85356503,9.03843894 C5.34717802,14.2102585 9.80097235,18.6634981 14.9724582,22.1586314 Z" id="Path" stroke="#00C232" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

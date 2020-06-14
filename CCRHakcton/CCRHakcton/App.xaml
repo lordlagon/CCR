@@ -1,10 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="Core.App">
+             x:Class="Core.App"
+             xmlns:local="clr-namespace:Core">
     <Application.Resources>
         <OnPlatform x:Key="font_extrabold" x:TypeArguments="x:String">
             <On Platform="Android" Value="Montserrat-ExtraBold.ttf#Montserrat-ExtraBold" />

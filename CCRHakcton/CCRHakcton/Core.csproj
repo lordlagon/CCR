@@ -13,6 +13,153 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\ic_attachment.svg" />
+    <None Remove="Images\ic_call.svg" />
+    <None Remove="Images\ic_camera_account.svg" />
+    <None Remove="Images\ic_camera_disabled.svg" />
+    <None Remove="Images\ic_camera_enabled.svg" />
+    <None Remove="Images\ic_cancel.svg" />
+    <None Remove="Images\ic_chat.svg" />
+    <None Remove="Images\ic_chat_camera_gray.svg" />
+    <None Remove="Images\ic_chat_check_gray.svg" />
+    <None Remove="Images\ic_chat_double_check_blue.svg" />
+    <None Remove="Images\ic_chat_double_check_gray.svg" />
+    <None Remove="Images\ic_chat_mic.svg" />
+    <None Remove="Images\ic_chat_time.svg" />
+    <None Remove="Images\ic_check.svg" />
+    <None Remove="Images\ic_checked.svg" />
+    <None Remove="Images\ic_delete.svg" />
+    <None Remove="Images\ic_double_check_blue.svg" />
+    <None Remove="Images\ic_empty_calls.svg" />
+    <None Remove="Images\ic_empty_chats.svg" />
+    <None Remove="Images\ic_empty_files.svg" />
+    <None Remove="Images\ic_empty_messages.svg" />
+    <None Remove="Images\ic_group.svg" />
+    <None Remove="Images\ic_group_account.svg" />
+    <None Remove="Images\ic_invite.svg" />
+    <None Remove="Images\ic_login_password.svg" />
+    <None Remove="Images\ic_login_user.svg" />
+    <None Remove="Images\ic_menu_authenticator.svg" />
+    <None Remove="Images\ic_menu_conf.svg" />
+    <None Remove="Images\ic_menu_contact.svg" />
+    <None Remove="Images\ic_menu_home.svg" />
+    <None Remove="Images\ic_menu_info.svg" />
+    <None Remove="Images\ic_menu_invite.svg" />
+    <None Remove="Images\ic_menu_logout.svg" />
+    <None Remove="Images\ic_menu_user.svg" />
+    <None Remove="Images\ic_message.svg" />
+    <None Remove="Images\ic_mic.svg" />
+    <None Remove="Images\ic_microphone_disabled.svg" />
+    <None Remove="Images\ic_microphone_enabled.svg" />
+    <None Remove="Images\ic_mic_cancel.svg" />
+    <None Remove="Images\ic_onboarding_call.svg" />
+    <None Remove="Images\ic_onboarding_chat.svg" />
+    <None Remove="Images\ic_onboarding_email.svg" />
+    <None Remove="Images\ic_onboarding_file.svg" />
+    <None Remove="Images\ic_pause.svg" />
+    <None Remove="Images\ic_pause_yellow.svg" />
+    <None Remove="Images\ic_phone.svg" />
+    <None Remove="Images\ic_phone_accept.svg" />
+    <None Remove="Images\ic_phone_end.svg" />
+    <None Remove="Images\ic_picture.svg" />
+    <None Remove="Images\ic_pin_clean.svg" />
+    <None Remove="Images\ic_pin_empty.svg" />
+    <None Remove="Images\ic_pin_error.svg" />
+    <None Remove="Images\ic_pin_filled.svg" />
+    <None Remove="Images\ic_play.svg" />
+    <None Remove="Images\ic_plus_blue.svg" />
+    <None Remove="Images\ic_plus_dark_yellow.svg" />
+    <None Remove="Images\ic_plus_green.svg" />
+    <None Remove="Images\ic_plus_turquoise.svg" />
+    <None Remove="Images\ic_send_message.svg" />
+    <None Remove="Images\ic_settings_email.svg" />
+    <None Remove="Images\ic_settings_fingerprint.svg" />
+    <None Remove="Images\ic_share.svg" />
+    <None Remove="Images\ic_speaker_disabled.svg" />
+    <None Remove="Images\ic_speaker_enabled.svg" />
+    <None Remove="Images\ic_success.svg" />
+    <None Remove="Images\ic_unchecked.svg" />
+    <None Remove="Images\ic_user_account.svg" />
+    <None Remove="Images\ic_video.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ic_attachment.svg" />
+    <EmbeddedResource Include="Images\ic_call.svg" />
+    <EmbeddedResource Include="Images\ic_camera_account.svg" />
+    <EmbeddedResource Include="Images\ic_camera_disabled.svg" />
+    <EmbeddedResource Include="Images\ic_camera_enabled.svg" />
+    <EmbeddedResource Include="Images\ic_cancel.svg" />
+    <EmbeddedResource Include="Images\ic_chat.svg" />
+    <EmbeddedResource Include="Images\ic_chat_camera_gray.svg" />
+    <EmbeddedResource Include="Images\ic_chat_check_gray.svg" />
+    <EmbeddedResource Include="Images\ic_chat_double_check_blue.svg" />
+    <EmbeddedResource Include="Images\ic_chat_double_check_gray.svg" />
+    <EmbeddedResource Include="Images\ic_chat_mic.svg" />
+    <EmbeddedResource Include="Images\ic_chat_time.svg" />
+    <EmbeddedResource Include="Images\ic_check.svg" />
+    <EmbeddedResource Include="Images\ic_checked.svg" />
+    <EmbeddedResource Include="Images\ic_delete.svg" />
+    <EmbeddedResource Include="Images\ic_double_check_blue.svg" />
+    <EmbeddedResource Include="Images\ic_empty_calls.svg" />
+    <EmbeddedResource Include="Images\ic_empty_chats.svg" />
+    <EmbeddedResource Include="Images\ic_empty_files.svg" />
+    <EmbeddedResource Include="Images\ic_empty_messages.svg" />
+    <EmbeddedResource Include="Images\ic_group.svg" />
+    <EmbeddedResource Include="Images\ic_group_account.svg" />
+    <EmbeddedResource Include="Images\ic_invite.svg" />
+    <EmbeddedResource Include="Images\ic_login_password.svg" />
+    <EmbeddedResource Include="Images\ic_login_user.svg" />
+    <EmbeddedResource Include="Images\ic_menu_authenticator.svg" />
+    <EmbeddedResource Include="Images\ic_menu_conf.svg" />
+    <EmbeddedResource Include="Images\ic_menu_contact.svg" />
+    <EmbeddedResource Include="Images\ic_menu_home.svg" />
+    <EmbeddedResource Include="Images\ic_menu_info.svg" />
+    <EmbeddedResource Include="Images\ic_menu_invite.svg" />
+    <EmbeddedResource Include="Images\ic_menu_logout.svg" />
+    <EmbeddedResource Include="Images\ic_menu_user.svg" />
+    <EmbeddedResource Include="Images\ic_message.svg" />
+    <EmbeddedResource Include="Images\ic_mic.svg" />
+    <EmbeddedResource Include="Images\ic_microphone_disabled.svg" />
+    <EmbeddedResource Include="Images\ic_microphone_enabled.svg" />
+    <EmbeddedResource Include="Images\ic_mic_cancel.svg" />
+    <EmbeddedResource Include="Images\ic_onboarding_call.svg" />
+    <EmbeddedResource Include="Images\ic_onboarding_chat.svg" />
+    <EmbeddedResource Include="Images\ic_onboarding_email.svg" />
+    <EmbeddedResource Include="Images\ic_onboarding_file.svg" />
+    <EmbeddedResource Include="Images\ic_pause.svg" />
+    <EmbeddedResource Include="Images\ic_pause_yellow.svg" />
+    <EmbeddedResource Include="Images\ic_phone.svg" />
+    <EmbeddedResource Include="Images\ic_phone_accept.svg" />
+    <EmbeddedResource Include="Images\ic_phone_end.svg" />
+    <EmbeddedResource Include="Images\ic_picture.svg" />
+    <EmbeddedResource Include="Images\ic_pin_clean.svg" />
+    <EmbeddedResource Include="Images\ic_pin_empty.svg" />
+    <EmbeddedResource Include="Images\ic_pin_error.svg" />
+    <EmbeddedResource Include="Images\ic_pin_filled.svg" />
+    <EmbeddedResource Include="Images\ic_play.svg" />
+    <EmbeddedResource Include="Images\ic_plus_blue.svg" />
+    <EmbeddedResource Include="Images\ic_plus_dark_yellow.svg" />
+    <EmbeddedResource Include="Images\ic_plus_green.svg" />
+    <EmbeddedResource Include="Images\ic_plus_turquoise.svg" />
+    <EmbeddedResource Include="Images\ic_send_message.svg" />
+    <EmbeddedResource Include="Images\ic_settings_email.svg" />
+    <EmbeddedResource Include="Images\ic_settings_fingerprint.svg" />
+    <EmbeddedResource Include="Images\ic_share.svg" />
+    <EmbeddedResource Include="Images\ic_speaker_disabled.svg" />
+    <EmbeddedResource Include="Images\ic_speaker_enabled.svg" />
+    <EmbeddedResource Include="Images\ic_success.svg" />
+    <EmbeddedResource Include="Images\ic_unchecked.svg" />
+    <EmbeddedResource Include="Images\ic_user_account.svg" />
+    <EmbeddedResource Include="Images\ic_video.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.2.0" />
+    <PackageReference Include="LiteDB" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AppCenter" Version="3.2.2" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.2.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="SkiaSharp" Version="1.68.3" />
     <PackageReference Include="SkiaSharp.Extended" Version="1.60.0" />
     <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
@@ -26,10 +173,5 @@
     <EmbeddedResource Update="Features\Login\LoginPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Images\" />
-    <Folder Include="Converters\" />
   </ItemGroup>
 </Project>

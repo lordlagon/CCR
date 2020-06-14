@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Success</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Interface" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="PIN-Criado" transform="translate(-136.000000, -175.000000)" stroke="#00B22E">
+            <g id="Success" transform="translate(137.000000, 176.000000)">
+                <g id="streamline-icon-check-circle-1@24x24-2">
+                    <g id="streamline-icon-check-circle-1@24x24" stroke-width="2">
+                        <path d="M20.5,47.58625 L29.6875,60.625 C30.895,62.42875 33.34,62.9125 35.14375,61.705 C35.50375,61.46125 35.82625,61.16125 36.08875,60.81625 L65.5,23.605" id="Path"></path>
+                        <path d="M43,0.80875 C66.29875,0.80875 85.1875,19.6975 85.1875,42.99625 C85.1875,66.295 66.29875,85.18375 43,85.18375 C19.70125,85.18375 0.8125,66.295 0.8125,42.99625 C0.8125,19.6975 19.70125,0.80875 43,0.80875 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

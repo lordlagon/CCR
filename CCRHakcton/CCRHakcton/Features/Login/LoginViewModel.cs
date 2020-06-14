@@ -32,7 +32,6 @@ namespace Core
         #endregion
 
         #region Services
-        readonly ILoginService _loginService;
         readonly IDialogService _dialogService;
         #endregion
 
@@ -44,10 +43,8 @@ namespace Core
 
         #region Init
         public LoginViewModel(INavigationService navigationService,
-                              ILoginService loginService,
                               IDialogService dialogService) : base(navigationService)
         {
-            _loginService = loginService;
             _dialogService = dialogService;
 
             LoginCommand = new Command(async () => await ExecuteLoginCommandAsync());
@@ -87,44 +84,44 @@ namespace Core
         {
             Error = string.Empty;
 
-            var loginResult = await _loginService.LoginAsync(User, Password).Handle(this);
+           // var loginResult = await _loginService.LoginAsync(User, Password).Handle(this);
 
             Password = string.Empty;
 
-            if (!loginResult.Success)
-            {
-                Error = loginResult.Message;
-                return;
-            }
+            //if (!loginResult.Success)
+            //{
+            //    Error = loginResult.Message;
+            //    return;
+            //}
 
-            if (!loginResult.Data.Complete)
-            {
-                if (loginResult.Data.Message == Resource.NeedsEmailConfirmation)
-                {
-                    var resend = await _dialogService.DisplayAsync(string.Empty, Resource.NeedsEmailConfirmation, Resource.SendEmailAgain, Resource.Ok);
-                    if (resend)
-                    {
-                        var resendResult = await _loginService.ResendEmailConfirmationAsync(User).Handle(this);
-                        if (!resendResult.Success)
-                        {
-                            Error = Resource.CantSendEmail;
-                            return;
-                        }
-                    }
+            //if (!loginResult.Data.Complete)
+            //{
+            //    if (loginResult.Data.Message == Resource.NeedsEmailConfirmation)
+            //    {
+            //        var resend = await _dialogService.DisplayAsync(string.Empty, Resource.NeedsEmailConfirmation, Resource.SendEmailAgain, Resource.Ok);
+            //        if (resend)
+            //        {
+            //            var resendResult = await _loginService.ResendEmailConfirmationAsync(User).Handle(this);
+            //            if (!resendResult.Success)
+            //            {
+            //                Error = "Erro no Email";
+            //                return;
+            //            }
+            //        }
 
-                    return;
-                }
+            //        return;
+            //    }
 
-                Error = loginResult.Data.Message;
+            //    Error = loginResult.Data.Message;
 
-                return;
-            }
-            Preferences.Set(Constants.FirstLauch, true);
-            await _navigationService.NavigateAndClearBackStackAsync<PinAccessViewModel>(PinAccessType.Create);
+            //    return;
+            //}
+           // Preferences.Set(Constants.FirstLauch, true);
+           // await _navigationService.NavigateAndClearBackStackAsync<PinAccessViewModel>(PinAccessType.Create);
         }
         
-        async Task ExecuteNeedHelpCommandAsync()
-            => await _navigationService.NavigateToAsync<NeedHelpViewModel>();
+        async Task ExecuteNeedHelpCommandAsync() { }
+            //=> await _navigationService.NavigateToAsync<NeedHelpViewModel>();
         #endregion
     }
 }

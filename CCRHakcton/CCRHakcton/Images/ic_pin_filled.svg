@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Interface" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Criar-Pin-01---Preenchido" transform="translate(-140.000000, -169.000000)" fill="#00B22E" stroke="#00B22E">
+            <g id="Group" transform="translate(141.000000, 170.000000)">
+                <circle id="Oval" cx="6" cy="6" r="6"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

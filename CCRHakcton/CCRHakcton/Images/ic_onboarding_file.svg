@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="66px" viewBox="0 0 67 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Files Onboarding</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-29.1%" y="-21.1%" width="158.2%" height="158.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.543478261" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Interface" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Onboarding-" transform="translate(-21.000000, -478.000000)">
+            <g id="Files-Onboarding" transform="translate(30.000000, 482.000000)">
+                <g id="Group">
+                    <g id="Oval-Copy-3">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#DEA900" stroke-width="1.08695652" fill="#F6F9FD" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Icon/Folder" transform="translate(14.000000, 13.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M20.25,9.75 L20.25,6.75 C20.25,5.922 19.578,5.25 18.75,5.25 L8.25,5.25 L8.25,3.75 C8.25,2.922 7.578,2.25 6.75,2.25 L2.25,2.25 C1.422,2.25 0.75,2.922 0.75,3.75 L0.75,20.05 C0.763,20.989 1.535,21.739 2.473,21.726 C3.225,21.716 3.881,21.212 4.086,20.488 L6.437,10.831 C6.624,10.19 7.211,9.749 7.879,9.75 L21.75,9.75 C22.578,9.75 23.25,10.421 23.251,11.249 C23.251,11.379 23.234,11.509 23.2,11.636 L21,20.636 C20.825,21.293 20.23,21.75 19.55,21.75 L2.447,21.75" id="Path" stroke="#DEA900" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

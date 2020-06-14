@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="66px" viewBox="0 0 67 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Chat Onboarding</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-29.1%" y="-21.1%" width="158.2%" height="158.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.543478261" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Interface" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Onboarding-" transform="translate(-21.000000, -408.000000)">
+            <g id="Chat-Onboarding" transform="translate(30.000000, 412.000000)">
+                <g id="Group">
+                    <g id="Oval-Copy-2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#00BDBB" stroke-width="1.08695652" fill="#F6F9FD" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Icon/Chat" transform="translate(13.000000, 14.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M8.25,18 L5.25,20.25 L5.25,15.75 L2.25,15.75 C1.422,15.75 0.75,15.078 0.75,14.25 L0.75,2.25 C0.75,1.422 1.422,0.75 2.25,0.75 L18.75,0.75 C19.578,0.75 20.25,1.422 20.25,2.25 L20.25,6.75 M5.25,5.25 L15.75,5.25 M5.25,9.75 L8.25,9.75 M23.25,18.75 L20.25,18.75 L20.25,23.25 L15.75,18.75 L11.25,18.75 L11.25,9.75 L23.25,9.75 L23.25,18.75 Z M19.5,14.75 L15.1987264,14.75" id="Combined-Shape" stroke="#00BDBB" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

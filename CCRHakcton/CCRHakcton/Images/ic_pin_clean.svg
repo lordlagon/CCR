@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="31px" viewBox="0 0 51 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Interface" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pin-de-Acesso" transform="translate(-250.000000, -471.000000)">
+            <g id="Group-5" transform="translate(250.000000, 472.000000)">
+                <g id="Group-4">
+                    <g id="Group-3" stroke="#C7C7C7">
+                        <path d="M18.0925209,0 L45.8986184,0 C48.1077574,-4.33003142e-15 49.8986184,1.790861 49.8986184,4 L49.8986184,24.9473684 C49.8986184,27.1565074 48.1077574,28.9473684 45.8986184,28.9473684 L18.0925209,28.9473684 C17.6246479,28.9473684 17.1715821,28.783336 16.8121521,28.483811 L1.84373107,16.0101268 C0.995177277,15.3029986 0.880529149,14.0418692 1.58765731,13.1933154 C1.66509575,13.1003893 1.75080494,13.0146801 1.84373107,12.9372417 L16.8121521,0.463557441 C17.1715821,0.164032439 17.6246479,6.74728503e-15 18.0925209,0 Z" id="Rectangle"></path>
+                    </g>
+                    <g id="Group-2" transform="translate(24.000000, 9.000000)" stroke="#313131" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="0.5" y1="0.5" x2="11.5" y2="11.5" id="Line"></line>
+                        <line x1="0.5" y1="0.5" x2="11.5" y2="11.5" id="Line" transform="translate(6.000000, 6.000000) scale(-1, 1) translate(-6.000000, -6.000000) "></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

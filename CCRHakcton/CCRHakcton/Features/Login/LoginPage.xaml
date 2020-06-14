@@ -42,9 +42,9 @@
                 <Image Grid.Row="0" HorizontalOptions="Center" VerticalOptions="End" Source="ic_logo" >
                  
                 </Image>
-                <local:CustomEntry Padding="54, 16, 16, 16" Grid.Row="1" Margin="0, 58, 0, 10" Keyboard="Email" Text="{Binding Email}"  HasError="{Binding Error, Converter={StaticResource isNotNull}}" Placeholder="Email" Style="{StaticResource entLogin}"/>
+                <local:CustomEntry Padding="54, 16, 16, 16" Grid.Row="1" Margin="0, 58, 0, 10" Keyboard="Email" Text="{Binding User}"  HasError="{Binding Error, Converter={StaticResource isNotNull}}" Placeholder="Email" Style="{StaticResource entLogin}"/>
                 <local:SvgImage Grid.Row="1" Margin="15, 58, 0, 10" ResourceId="ic_login_user" Style="{StaticResource svgLogin}"/>
-                <local:CustomEntry Padding="54, 16, 16, 16"  Grid.Row="2" Text="Senha" HasError="{Binding Error, Converter={StaticResource isNotNull}}" IsPassword="True" Placeholder="{x:Static local:Resource.Password}" Style="{StaticResource entLogin}"/>
+                <local:CustomEntry Padding="54, 16, 16, 16"  Grid.Row="2" Text="Senha" HasError="{Binding Error, Converter={StaticResource isNotNull}}" IsPassword="True" Placeholder="Senha" Style="{StaticResource entLogin}"/>
                 <local:SvgImage Grid.Row="2" Margin="15, 0, 0, 0"  ResourceId="ic_login_password" Style="{StaticResource svgLogin}"/>
 
                 <Label Grid.Row="3" Margin="0, 15, 0, 26" Text="{Binding Error}" Style="{StaticResource lblError}"/>
