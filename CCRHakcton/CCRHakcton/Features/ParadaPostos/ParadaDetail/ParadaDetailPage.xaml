@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Core"
+    x:Name="Root"
+    Title="Posto Costa Brava"
+    x:Class="Core.ParadaDetailPage"
+    BackgroundColor="White">
+
+    <ScrollView x:Name="scrool" VerticalOptions="FillAndExpand">
+        <Grid Padding="20" RowSpacing="0" ColumnSpacing="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Row="0" Grid.ColumnSpan="3" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Source="ic_logo" />
+            <Label Grid.Row="1" Text="Detalhes" VerticalOptions="Start" FontSize="Large" />
+            <local:SvgImage Grid.Row="2" Grid.Column="0" ResourceId="ic_menu_user"/>
+            <Label Grid.Row="3" Grid.Column="0" Margin="0,10" Text="Refeição" HorizontalOptions="Center" VerticalOptions="StartAndExpand" />
+            <local:SvgImage Grid.Row="2" Grid.Column="1" ResourceId="ic_menu_user"/>
+            <Label Grid.Row="3" Grid.Column="1" Margin="0,10" Text="Banho" HorizontalOptions="Center" VerticalOptions="StartAndExpand" />
+            <local:SvgImage Grid.Row="2" Grid.Column="2" ResourceId="ic_menu_user"/>
+            <Label Grid.Row="3" Grid.Column="2" Margin="0,10" Text="Banheiros" HorizontalOptions="Center" VerticalOptions="StartAndExpand" />
+            <Label Grid.Row="4" Grid.ColumnSpan="3" Margin="0,10" Text="Rodovia Régis Bittencourt, Km 67" HorizontalOptions="Center" VerticalOptions="StartAndExpand" FontSize="Medium" />
+            <Label Grid.Row="5" Grid.ColumnSpan="3" Text="Entre em contato..." HorizontalOptions="Center" VerticalOptions="StartAndExpand" FontSize="Medium" />
+            <local:SvgImage Grid.Row="6" Grid.Column="0" Margin="0,10" ResourceId="ic_call" />
+            <Label Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,10" Text="(41) 3333-0000" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" FontSize="Medium" />
+            <Button Grid.Row="7" Grid.ColumnSpan="3" Command="{Binding CuponsCommand}" Text="Avaliações" VerticalOptions="EndAndExpand" BackgroundColor="LightBlue" TextColor="White" CornerRadius="25"  HeightRequest="55"/>
+
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

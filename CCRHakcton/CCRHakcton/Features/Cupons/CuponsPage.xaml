@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Core"
+             x:Class="Core.CuponsPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+             
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Estes Cupons é valido somente nos postos conveniados" HorizontalOptions="Center" FontSize="Medium"/>
+            <Label Text="Verifique a lista de postos conveniados aqui..." HorizontalOptions="Center" Style="{StaticResource lblHyperlink}"/>
+            <Label Margin="0,20,0,0" Text="Cupons" HorizontalOptions="StartAndExpand" FontSize="Large"/>
+            <ListView 
+                Footer=""
+                HasUnevenRows="True"
+                CachingStrategy="RecycleElement"
+                SelectionMode="None"
+                ItemsSource="{Binding Items}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Margin="20, 15" RowSpacing="0" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0"  Text="{Binding Title}" LineBreakMode="TailTruncation" Style="{StaticResource lblDefault}" FontAttributes="Bold"/>
+                                <Frame Grid.Row="1" BackgroundColor="red">
+                                    <Label Grid.Row="1" Grid.Column="0" Text="{Binding Description}" HorizontalOptions="Center" LineBreakMode="NoWrap" Style="{StaticResource lblMediumBase}" TextColor="{StaticResource colorWhite}" />
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

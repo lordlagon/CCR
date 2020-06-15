@@ -54,8 +54,10 @@ namespace Core
             NavigationService.ConfigureMap<HomeViewModel, HomePage>();
             NavigationService.ConfigureMap<LoginViewModel, LoginPage>();
             NavigationService.ConfigureMap<CadastroViewModel, CadastroPage>();
-            //NavigationService.ConfigureMap<MenuViewModel, MenuPage>();
+            NavigationService.ConfigureMap<ParadaDetailViewModel, ParadaDetailPage>();
             NavigationService.ConfigureMap<MyAccountViewModel, MyAccountPage>();
+            NavigationService.ConfigureMap<ParadaListViewModel, ParadaListPage>();
+            NavigationService.ConfigureMap<CuponsViewModel, CuponsPage>();
 
             NavigationService.ConfigureMap<ServicosViewModel, ServicosPage>();
         }
