@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Core"
+             x:Class="Core.ParadaListPage"
+             Title="Pontos de Paradas"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Source="ic_logo" />
+            <ListView
+                Grid.Row="1"
+                Footer=""
+                HasUnevenRows="True"
+                CachingStrategy="RecycleElement"
+                PropertyChanged="ListView_PropertyChanged"
+                SelectionMode="None"
+                ItemsSource="{Binding Items}"
+                local:AttachedItemTappedBehavior.Command="{Binding ItemClickCommand}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Margin="20, 15" ColumnSpacing="1" RowSpacing="0" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Title}" LineBreakMode="TailTruncation" Style="{StaticResource lblDefault}" FontAttributes="Bold"/>
+                                <Label Grid.Row="1" Grid.Column="0" Text="{Binding Description}" LineBreakMode="NoWrap" Style="{StaticResource lblSmallBase}" TextColor="{StaticResource colorGreen}" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <!--<ListView.Behaviors>
+                    <local:InfiniteScrollBehavior LoadMoreCommand="{Binding LoadMoreCommand}"/>
+                </ListView.Behaviors>-->
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

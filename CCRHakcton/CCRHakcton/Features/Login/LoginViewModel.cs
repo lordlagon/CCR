@@ -121,7 +121,7 @@ namespace Core
         }
 
         async Task ExecuteCadastroCommandAsync()
-            => await _navigationService.NavigateToAsync<CadastroViewModel>();
+            => await _navigationService.NavigateToAsync<CuponsViewModel>();
 
         #endregion
     }

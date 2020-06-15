@@ -183,9 +183,21 @@
     <EmbeddedResource Update="Features\MyAccount\MyAccountPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Features\ParadaPostos\ParadaDetail\ParadaDetailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Features\ParadaPostos\ParadaList\ParadaListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Features\Cupons\CuponsPage.xaml.cs">
+      <DependentUpon>CuponsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Features\ParadaPostos\ParadaDetail\ParadaDetailPage.xaml.cs">
+      <DependentUpon>ParadaDetailPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Features\Servicos\ServicosPage.xaml.cs">
       <DependentUpon>ServicosPage.xaml</DependentUpon>
     </Compile>
