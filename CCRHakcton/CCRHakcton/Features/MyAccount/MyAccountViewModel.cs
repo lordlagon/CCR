@@ -145,12 +145,12 @@ namespace Core
         {
             var user = new MyAccountWrapper
             {
-                //Name = "Fulano",
-                //Email = "Fulano@gmail.com", 
-                //CNH =   "012567-4",
-                //CPF = "000.000.000-00",
-                //Sexo = "M",
-                //Telefone = "(41) 3333-0000"
+                Name = "Fulano",
+                Email = "Fulano@gmail.com",
+                CNH = "012567-4",
+                CPF = "000.000.000-00",
+                Sexo = "M",
+                Telefone = "(41) 3333-0000"
             };
             return Task.FromResult(user);  // => _myAccountService.GetUserAsync(_forceSync);
         }
